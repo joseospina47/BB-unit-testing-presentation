@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Branger_Briz	- Unit Testing</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="list">
+
+	<header class="caption">
+		<h1>Unit Testing - Branger_Briz</h1>
+		<p><a href="https://co.linkedin.com/in/joseospina47">Jose Ospina</a></p>
+	</header>
+
+	<section class="slide" id="cover"><div>
+			<div class="title-logo">
+	    	<img src="pictures/logo.jpg" class="title-logo" alt="Branger_Briz Logo" />
+	      <h2>Unit Testing</h2>
+	    </div>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>What is unit testing?</h2>
+		</div>
+	</section>
+
+   <section class="slide">
+	 	<div>
+			<h2>Benefits</h2>
+			<ul>
+				<li>Finding bugs early</li>
+				<li>Less debugging</li>
+				<li>Changes to the application are safier and easier</li>
+				<li>
+					Unit tests are a good way to validate your code design, in most cases
+					code hard to test is badly designed.
+				</li>
+			</ul>
+		</div>
+	</section>
+
+  <section class="slide">
+		<div>
+			<h2>A Good Unit Test</h2>
+			<ul>
+				<li>Tests only one unit at time</li>
+				<li>Does not depend on the tests order</li>
+				<li>Runs fast</li>
+				<li>Tests only one feature at a time</li>
+				<li>is easy to understand</li>
+				<li>Tests the public API of the unit</li>
+				<li>Cover all use cases</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Limitations of Unit Testing</h2>
+			<ul>
+				<li>Not every bug can be found by unit tests</li>
+				<li>
+					As we're testing only one module, integration issues aren't covered
+				</li>
+				<li>Multi-threaded issues can't be tested by a single-threaded test</li>
+				<li>
+					Hardware failures, 3rd party components issues, etc. Can only be tested with the proper test suite.
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>Different Types of Testing</h2>
+			<ul>
+				<li>
+					<strong>Continous Integration</strong>
+					<ul>
+						<li>
+							Unit Testing
+						</li>
+						<li>
+							Integration Testing
+						</li>
+						<li>
+							Functional Testing
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>SOLID Principles? What's That?</h2>
+		</div>
+	</section>
+
+  <section class="slide">
+		<div>
+			<h2>SOLID Principles</h2>
+			<ul>
+				<li>
+					<strong>S</strong> - Single responsibility principle
+				</li>
+				<li>
+					<strong>O</strong> - Open/closed principle
+				</li>
+				<li>
+					<strong>L</strong> - Liskov substitution principle
+				</li>
+				<li>
+					<strong>I</strong> - Interface segregation principle
+				</li>
+				<li>
+					<strong>D</strong> - Dependency inversion principle
+				</li>
+			</ul>
+		</div>
+	</section>
+
+  <section class="slide">
+		<div>
+			<h2>Single responsibility principle</h2>
+			<p>
+				The single responsibility principle states that every module or class should have responsibility over a single part of the functionality provided by the software.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Open/closed principle</h2>
+			<p>
+				In object-oriented programming, the open/closed principle states "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"; that is, such an entity can allow its behaviour to be extended without modifying its source code.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Liskov substitution principle</h2>
+			<p>
+				Substitutability is a principle in object-oriented programming that states that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of T (correctness, task performed, etc.).
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Interface segregation principle</h2>
+			<p>
+				The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Dependency inversion principle</h2>
+			<p>
+				The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>TDD, Test-driven Development</h2>
+			<img src="pictures/tddSteps.jpg" alt="TDD Steps" />
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Red, Green, Refactor? What The...?</h2>
+		</div>
+	</section>
+
+  <section class="slide">
+		<div>
+			<h2>BDD, Behavior-driven development</h2>
+			<p>
+				The essential idea is to break down writing a scenario (or test) into three sections, known as a Given-When-Then style:
+			</p>
+			<p>
+				The given part describes the state of the world before you begin the behavior you’re specifying in this scenario. You can think of it as the pre-conditions to the test. The when section is that behavior that you’re specifying. Finally the then section describes the changes you expect due to the specified behavior.
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>BDD sample scenario</h2>
+			<img src="pictures/bddSample.png" alt="BDD Sample Scenario" />
+		</div>
+	</section>
+
+  <section class="slide"><div>
+		<h2>Recommended Books</h2>
+    <ul>
+      <li><a href="https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890">The Art of Unit Testing</a></li>
+      <li><a href="https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530/">Test Driven Development: By Example</a></li>
+      <li><a href="https://www.amazon.com/BDD-Action-Behavior-driven-development-lifecycle/dp/161729165X">BDD in Action: Behavior-driven development for the whole software lifecycle</a></li>
+      <li><a href="https://www.amazon.com/Continuous-Integration-Improving-Software-Reducing/dp/0321336380">Continuous Integration: Improving Software Quality and Reducing Risk</a></li>
+    </ul>
+	</div></section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Thank you so much!!!</h2>
+		</div>
+	</section>
+
+	<script src="shower/shower.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</body>
+</html>

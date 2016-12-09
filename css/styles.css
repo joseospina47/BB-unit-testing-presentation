@@ -1,0 +1,101 @@
+body {
+    font: 24px/2 "PT Sans",sans-serif;
+}
+
+.slide {
+    background: #fff;
+}
+
+/* Hide the slide numbers */
+.slide:after {
+    display: none;
+}
+
+.slide h2 {
+  font: bold 60px/1 "PT Sans Narrow",sans-serif;
+}
+
+/* Hide the line numbers for code snippets */
+.slide pre code:before {
+    display: none;
+}
+
+.slide pre code {
+  line-height: 35px;
+  font-size: 22px;
+}
+
+.slide.small-code pre code {
+  line-height: 26px;
+  font-size: 15px;
+}
+
+/* Give us an sub-header that fits with the theme */
+.slide h3 {
+    margin: 0 0 17px;
+    color: rgb(87, 87, 87);
+    font: bold 30px/1 "PT Sans Narrow",sans-serif;
+}
+
+/*
+ * Center an element in the middle of the page. Stolen
+ * shamelessly from the Mozilla slide deck template.
+ */
+.middle {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+}
+
+.mono {
+    font-family: "PT Mono",monospace;
+    color: #666;
+}
+
+.slide img {
+  max-width: 750px;
+  max-height: 450px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/* Styles for specific slides */
+
+#cover h2 {
+  margin-top: 25px;
+  font-size: 59px;
+}
+
+#cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-logo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#cover img {
+  max-width: 400px;
+}
+
+#details img {
+  float: right;
+}
+
+#twitter ul {
+  max-width: 400px;
+}
